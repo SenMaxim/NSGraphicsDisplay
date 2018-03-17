@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0097A7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/current_frequencies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Frequencies"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="#0097A7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/genotypes_input"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0097A7"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/genotype_AA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AA"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/genotype_Aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Aa"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/genotype_aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="aa"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/absolute_fitness_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0097A7"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/absolute_fitness_AA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Abs Fitness"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/absolute_fitness_Aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Abs Fitness"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/absolute_fitness_aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Abs Fitness"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <com.example.swtor.nsgraphicsdisplay.PlayButtonImage
+        android:id="@+id/play_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00B8D4" />
+</LinearLayout>
