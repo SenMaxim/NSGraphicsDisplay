@@ -30,26 +30,9 @@ public class MainActivity extends AppCompatActivity implements ControlFragment.O
         // Initialize fields
         display = (GenotypeGraphicsDisplay)findViewById(R.id.display);
 
-        /*
-         * Start GenotypeDisplay Test here
-         */
-        //display.test();
-
-
         genotypeFrequencies = gf;
         absoluteFitness = af;
         currentFrequencies = test;
-
-        // Work on timer
-        if (timer != null) {        // Not stopping properly
-            timer.cancel();
-            timer.purge();
-            timer = null;
-        }
-        else {
-            Timer timer = new Timer();
-            timer.scheduleAtFixedRate(new GenotypeTimerTask(display, currentFrequencies, genotypeFrequencies, absoluteFitness), 0, 100);
-        }
     }
 
     private class GenotypeTimerTask extends TimerTask {
